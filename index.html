@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Calculator</title>
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input class="result" id="result" type = "text">
+            
+            <div>
+                <button class="operator" onclick=" clearResult()">C</button>
+                <button class="operator" onclick="clearEnd()">CE</button>
+                <button class="operator" onclick="getNumbers('%')">%</button>
+                <button class="operator" onclick="getNumbers('/')">/</button>
+            </div>
+            <div>
+                <button class="number" onclick="getNumbers('7')">7</button>
+                <button class="number" onclick="getNumbers('8')">8</button>
+                <button class="number" onclick="getNumbers('9')">9</button>
+                <button class="operator" onclick="getNumbers('*')" style="background-color: orange;">X</button>
+            </div>
+            <div>
+                <button class="number" onclick="getNumbers('4')">4</button>
+                <button class="number" onclick="getNumbers('5')">5</button>
+                <button class="number" onclick="getNumbers('6')">6</button>
+                <button class="operator" onclick="getNumbers('-')" style="background-color: pink;">-</button>
+            </div>
+            <div>
+                <button class="number" onclick="getNumbers('1')">1</button>
+                <button class="number" onclick="getNumbers('2')">2</button>
+                <button class="number" onclick="getNumbers('3')">3</button>
+                <button class="operator" onclick="getNumbers('+')" style="background-color: lightskyblue;">+</button>
+            </div>
+            <div>
+                <button class="number" onclick="getNumbers('0')">0</button>
+                <button class="operator" onclick="getNumbers('.')">.</button>
+
+
+                <button class="operator" onclick="getResult()" style="background-color: blueviolet;">=</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
